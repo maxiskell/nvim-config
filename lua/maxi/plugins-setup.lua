@@ -84,7 +84,10 @@ return packer.startup(function(use)
 
   -- formatting
   use("jose-elias-alvarez/null-ls.nvim")
-  use('MunifTanjim/prettier.nvim')
+  use("MunifTanjim/prettier.nvim")
+
+  -- astro
+  use('wuelnerdotexe/vim-astro')
 
   if packer_bootstrap then
     require('packer').sync()

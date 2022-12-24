@@ -214,6 +214,11 @@ _G.packer_plugins = {
     path = "/Users/maxi/.local/share/nvim/site/pack/packer/start/typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
   },
+  ["vim-astro"] = {
+    loaded = true,
+    path = "/Users/maxi/.local/share/nvim/site/pack/packer/start/vim-astro",
+    url = "https://github.com/wuelnerdotexe/vim-astro"
+  },
   ["vim-maximizer"] = {
     loaded = true,
     path = "/Users/maxi/.local/share/nvim/site/pack/packer/start/vim-maximizer",
