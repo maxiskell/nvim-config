@@ -10,4 +10,3 @@ lualine.setup({
     theme = lualine_nord
   }
 })
-
