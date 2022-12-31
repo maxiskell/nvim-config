@@ -11,9 +11,9 @@ keymap.set("n", "H", "^")
 keymap.set("n", "L", "$")
 
 -- basic quit & save
-keymap.set("n", "<leader>x", ":x<cr>")
 keymap.set("n", "<leader>w", ":w<cr>")
 keymap.set("n", "<leader>q", ":q<cr>")
+keymap.set("n", "<leader>a", ":x<cr>")
 
 -- center on page navigation
 keymap.set("n", "<c-d>", "<c-d>zz")
