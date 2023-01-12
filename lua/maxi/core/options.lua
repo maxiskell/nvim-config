@@ -29,3 +29,8 @@ opt.backspace = "indent,eol,start"
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
+
+-- no swaps or backups
+opt.swapfile = false
+opt.backup = false
+
