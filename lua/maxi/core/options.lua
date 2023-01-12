@@ -26,9 +26,6 @@ opt.showmode = false
 -- backspace
 opt.backspace = "indent,eol,start"
 
--- clipboard
-opt.clipboard:append("unnamedplus")
-
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
