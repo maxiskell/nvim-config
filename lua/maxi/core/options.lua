@@ -38,3 +38,5 @@ opt.backup = false
 opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"
 opt.undofile = true
 
+-- quick refresh
+opt.updatetime = 50
