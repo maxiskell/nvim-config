@@ -34,3 +34,7 @@ opt.splitbelow = true
 opt.swapfile = false
 opt.backup = false
 
+-- undo file
+opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"
+opt.undofile = true
+
