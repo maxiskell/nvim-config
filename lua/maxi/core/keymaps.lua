@@ -15,6 +15,9 @@ keymap.set("n", "<leader>w", ":w<cr>")
 keymap.set("n", "<leader>q", ":q<cr>")
 keymap.set("n", "<leader>a", ":x<cr>")
 
+-- Toggle file explorer
+keymap.set("n", "<leader>e", ":Rexplore<cr>")
+
 -- center on page navigation
 keymap.set("n", "<c-d>", "<c-d>zz")
 keymap.set("n", "<c-u>", "<c-u>zz")
@@ -49,8 +52,6 @@ keymap.set("n", "<c-l>", "<c-w>l")
 -- vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<cr>")
 
--- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>")
 
 -- telescope
 local builtin = require('telescope.builtin')

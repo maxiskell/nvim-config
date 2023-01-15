@@ -28,12 +28,6 @@ return packer.startup(function(use)
   -- required by many nvim plugins
   use("nvim-lua/plenary.nvim")
 
-  -- file explorer
-  use("nvim-tree/nvim-tree.lua")
-
-  -- icons
-  use("nvim-tree/nvim-web-devicons")
-
   -- nice, smooth colorscheme
   use("arcticicestudio/nord-vim")
 
