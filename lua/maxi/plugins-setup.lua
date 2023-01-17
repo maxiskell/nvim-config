@@ -44,9 +44,6 @@ return packer.startup(function(use)
   -- commenting with gc
   use("numToStr/Comment.nvim")
 
-  -- statusline
-  use("nvim-lualine/lualine.nvim")
-
   -- fuzzy finder
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
   use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })
