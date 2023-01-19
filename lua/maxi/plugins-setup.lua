@@ -78,6 +78,10 @@ return packer.startup(function(use)
   -- astro
   use('wuelnerdotexe/vim-astro')
 
+  -- cosmic ui
+  use("MunifTanjim/nui.nvim")
+  use("CosmicNvim/cosmic-ui")
+
   if packer_bootstrap then
     require('packer').sync()
   end
