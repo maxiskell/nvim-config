@@ -24,8 +24,15 @@ keymap.set("n", "<c-u>", "<c-u>zz")
 keymap.set("n", "<c-f>", "<c-f>zz")
 keymap.set("n", "<c-b>", "<c-b>zz")
 
+-- center on search traveling
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
 -- no search highlight
 keymap.set("n", "<leader>h", ":nohl<cr>")
+
+-- keep position on line lifting
+keymap.set("n", "J", "mzJ`z")
 
 -- remove without adding to clipboard
 keymap.set("n", "x", '"_x"')
@@ -46,12 +53,19 @@ keymap.set("n", "<c-j>", "<c-w>j")
 keymap.set("n", "<c-k>", "<c-w>k")
 keymap.set("n", "<c-l>", "<c-w>l")
 
+-- paste and replace selected line
+keymap.set("x", "<leader>p", "\"_dP")
+
+-- LSP format
+keymap.set("n", "<leader>f", function()
+  vim.lsp.buf.format()
+end)
+
 -- Plugin keymaps --
 -- -------------- --
 
 -- vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<cr>")
-
 
 -- telescope
 local builtin = require('telescope.builtin')
