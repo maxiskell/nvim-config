@@ -10,7 +10,7 @@ cosmic_ui.setup({
   rename = {
     border = {
       highlight = 'FloatBorder',
-      style = 'single',
+      style = 'rounded',
       title = ' Rename ',
       title_align = 'left',
       title_hl = 'FloatBorder',
@@ -23,7 +23,7 @@ cosmic_ui.setup({
     border = {
       bottom_hl = 'FloatBorder',
       highlight = 'FloatBorder',
-      style = 'single',
+      style = 'rounded',
       title = 'Code Actions',
       title_align = 'center',
       title_hl = 'FloatBorder',
