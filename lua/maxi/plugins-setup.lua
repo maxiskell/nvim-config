@@ -51,11 +51,6 @@ return packer.startup(function(use)
   -- git
   use("lewis6991/gitsigns.nvim")
 
-  -- snippets
-  use("L3MON4D3/LuaSnip")
-  use("saadparwaiz1/cmp_luasnip")
-  use("rafamadriz/friendly-snippets")
-
   -- autocompletion
   use("hrsh7th/nvim-cmp")
   use("hrsh7th/cmp-buffer")
@@ -63,12 +58,16 @@ return packer.startup(function(use)
   use("hrsh7th/cmp-nvim-lsp")
   use("hrsh7th/cmp-nvim-lua")
 
+  -- snippets
+  use("L3MON4D3/LuaSnip")
+  use("saadparwaiz1/cmp_luasnip")
+  use("rafamadriz/friendly-snippets")
+
   -- LSP support
   use("neovim/nvim-lspconfig")
   use("williamboman/mason.nvim")
   use("williamboman/mason-lspconfig.nvim")
   use({ "glepnir/lspsaga.nvim", branch = "main" })
-  use("onsails/lspkind.nvim")
 
   -- LSP servers
   use("jose-elias-alvarez/typescript.nvim")
