@@ -12,10 +12,12 @@ mason.setup()
 
 mason_lspconfig.setup({
   ensure_installed = {
-    "tsserver",
-    "html",
+    "astro",
     "cssls",
-    "tailwindcss",
+    "html",
+    "rust_analyzer",
     "sumneko_lua",
+    "tailwindcss",
+    "tsserver",
   }
 })
