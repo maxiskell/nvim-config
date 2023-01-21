@@ -81,6 +81,9 @@ return packer.startup(function(use)
   use("MunifTanjim/nui.nvim")
   use("CosmicNvim/cosmic-ui")
 
+  -- tree-sitter <3
+  use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
+
   if packer_bootstrap then
     require("packer").sync()
   end
