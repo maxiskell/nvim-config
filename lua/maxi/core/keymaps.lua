@@ -57,22 +57,11 @@ keymap.set("n", "<c-l>", "<c-w>l")
 keymap.set("x", "<leader>p", "\"_dP")
 
 -- quickfix navigation
-keymap.set("n", "]q", ":lnext<cr>")
-keymap.set("n", "[q", ":lprevious<cr>")
+keymap.set("n", "]q", ":cnext<cr>")
+keymap.set("n", "[q", ":cprevious<cr>")
 
 -- Plugin keymaps --
 -- -------------- --
 
 -- vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<cr>")
-
--- telescope
-local builtin = require('telescope.builtin')
-keymap.set('n', '<leader>ff', builtin.find_files, {})
-keymap.set('n', '<leader>fg', builtin.live_grep, {})
-keymap.set('n', '<leader>fb', builtin.buffers, {})
-keymap.set('n', '<leader>fh', builtin.help_tags, {})
-keymap.set('n', '<leader>fd', builtin.lsp_definitions, {})
-keymap.set('n', '<leader>fi', builtin.lsp_implementations, {})
-keymap.set('n', '<leader>fr', builtin.lsp_references, {})
-keymap.set('n', '<leader>fc', builtin.git_commits, {})
