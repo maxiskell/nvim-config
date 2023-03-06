@@ -9,7 +9,7 @@ local formatting = null_ls.builtins.formatting
 null_ls.setup({
   sources = {
     code_actions.gitsigns,
-    formatting.prettierd.with({ extra_args = { "--no-semi", "--single-quote" } }),
+    formatting.prettierd,
     formatting.rustfmt,
     formatting.stylua.with({ extra_args = { "--indent_type", "Spaces" } }),
   },
