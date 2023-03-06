@@ -62,6 +62,10 @@ keymap.set("x", "<leader>p", "\"_dP")
 keymap.set("n", "]q", ":cnext<cr>")
 keymap.set("n", "[q", ":cprevious<cr>")
 
+-- location list navigation
+keymap.set("n", "]]", ":lnext<cr>")
+keymap.set("n", "[[", ":lprev<cr>")
+
 -- Plugin keymaps --
 -- -------------- --
 
