@@ -9,6 +9,8 @@ local keymap = vim.keymap
 keymap.set("n", ";", ":")
 keymap.set("n", "H", "^")
 keymap.set("n", "L", "$")
+keymap.set("n", "j", "gj")
+keymap.set("n", "k", "gk")
 
 -- basic quit & save
 keymap.set("n", "<leader>w", ":w<cr>")
