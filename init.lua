@@ -1,6 +1,7 @@
 require "maxi.plugins-setup"
 require "maxi.core.options"
 require "maxi.core.keymaps"
+require "maxi.core.netrw"
 require "maxi.core.colorscheme"
 require "maxi.plugins.autopairs"
 require "maxi.plugins.comment"
