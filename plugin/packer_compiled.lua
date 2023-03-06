@@ -139,11 +139,6 @@ _G.packer_plugins = {
     path = "/Users/maxi/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["nord.nvim"] = {
-    loaded = true,
-    path = "/Users/maxi/.local/share/nvim/site/pack/packer/start/nord.nvim",
-    url = "https://github.com/shaunsingh/nord.nvim"
-  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/Users/maxi/.local/share/nvim/site/pack/packer/start/nui.nvim",
@@ -183,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/maxi/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "/Users/maxi/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,

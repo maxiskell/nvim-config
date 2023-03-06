@@ -29,7 +29,7 @@ return packer.startup(function(use)
   use("nvim-lua/plenary.nvim")
 
   -- nice, smooth colorscheme
-  use("shaunsingh/nord.nvim")
+  use({ 'rose-pine/neovim', as = 'rose-pine', })
 
   -- maximizes and restores current window
   use("szw/vim-maximizer")
