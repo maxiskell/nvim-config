@@ -13,21 +13,12 @@ if not builtin_status then
   return
 end
 
-local utils_status, utils = pcall(require, "telescope.utils")
-if not utils_status then
-  return
-end
-
 local lsp_settings = {
   theme = "ivy",
   initial_mode = "normal",
   path_display = { "smart" },
 }
 
-local finder_settings = {
-  previewer = false,
-  theme = "dropdown",
-}
 
 telescope.setup({
   defaults = {
@@ -44,8 +35,10 @@ telescope.setup({
     },
   },
   pickers = {
-    find_files = finder_settings,
-    git_files = finder_settings,
+    find_files = {
+      previewer = false,
+      theme = "dropdown",
+    },
     buffers = {
       previewer = false,
       theme = "dropdown",
@@ -62,16 +55,7 @@ telescope.load_extension("fzf")
 
 local keymap = vim.keymap
 
-local find_files = function()
-  local _, ret, _ = utils.get_os_command_output({ "git", "rev-parse", "--is-inside-work-tree" })
-  if ret == 0 then
-    builtin.git_files()
-  else
-    builtin.find_files()
-  end
-end
-
-keymap.set("n", "<leader>ff", find_files, {})
+keymap.set("n", "<leader>ff", builtin.find_files, {})
 keymap.set("n", "<leader>fg", builtin.live_grep, {})
 keymap.set("n", "<leader>fb", builtin.buffers, {})
 keymap.set("n", "<leader>fh", builtin.help_tags, {})
