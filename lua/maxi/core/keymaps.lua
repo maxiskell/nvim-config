@@ -17,9 +17,6 @@ keymap.set("n", "<leader>w", ":w<cr>")
 keymap.set("n", "<leader>q", ":q<cr>")
 keymap.set("n", "<leader>a", ":x<cr>")
 
--- Toggle file explorer
-keymap.set("n", "<leader>e", ":Vexplore<cr>")
-
 -- center on page navigation
 keymap.set("n", "<c-d>", "<c-d>zz")
 keymap.set("n", "<c-u>", "<c-u>zz")
