@@ -73,11 +73,21 @@ cmp.setup({
       else
         fallback()
       end
+    end),
+    -- copilot
+    ["<c-;>"] = cmp.mapping(function(fallback)
+      cmp.mapping.abort()
+      local copilot_keys = vim.fn["copilot#Accept"]()
+      if copilot_keys ~= "" then
+        vim.api.nvim_feedkeys(copilot_keys, "i", true)
+      else
+        fallback()
+      end
     end)
   }),
   formatting = {
     fields = { "kind", "abbr", "menu" },
-    format = function (entry, item)
+    format = function(entry, item)
       item.kind = string.format("%s", kind_icons[item.kind])
       item.menu = ({
         nvim_lsp = "[LSP]",
@@ -101,5 +111,3 @@ cmp.setup({
     ghost_text = true
   }
 })
-
-

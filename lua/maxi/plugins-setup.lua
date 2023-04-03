@@ -71,6 +71,8 @@ return packer.startup(function(use)
   -- LSP servers
   use("jose-elias-alvarez/typescript.nvim")
 
+  use("github/copilot.vim")
+
   -- formatting
   use("jose-elias-alvarez/null-ls.nvim")
 
