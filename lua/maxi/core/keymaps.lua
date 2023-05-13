@@ -63,6 +63,18 @@ keymap.set("n", "[q", ":cprevious<cr>")
 keymap.set("n", "]]", ":lnext<cr>")
 keymap.set("n", "[[", ":lprev<cr>")
 
+-- LSP
+local opts = { noremap = true, silent = true }
+
+keymap.set("n", "<leader>k", '<cmd>lua vim.lsp.buf.hover()<cr>', opts)
+keymap.set("n", "<leader>l", '<cmd>lua vim.lsp.buf.signature_help()<cr>', opts)
+
+keymap.set("n", "<leader>j", '<cmd>lua vim.diagnostic.open_float()<cr>', opts)
+keymap.set("n", "<leader>D", '<cmd>lua vim.diagnostic.setloclist()<cr>', opts)
+
+keymap.set("n", "]d", '<cmd>lua vim.diagnostic.goto_next()<cr>', opts)
+keymap.set("n", "[d", '<cmd>lua vim.diagnostic.goto_prev()<cr>', opts)
+
 -- Plugin keymaps --
 -- -------------- --
 
