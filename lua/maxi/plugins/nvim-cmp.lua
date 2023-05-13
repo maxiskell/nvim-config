@@ -75,7 +75,7 @@ cmp.setup({
       end
     end),
     -- copilot
-    ["<c-;>"] = cmp.mapping(function(fallback)
+    ["<c-space>"] = cmp.mapping(function(fallback)
       cmp.mapping.abort()
       local copilot_keys = vim.fn["copilot#Accept"]()
       if copilot_keys ~= "" then
