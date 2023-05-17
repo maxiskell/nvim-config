@@ -1,4 +1,4 @@
-local status, nvim_tmux_nav = require('nvim-tmux-navigation')
+local status, nvim_tmux_nav = pcall(require, 'nvim-tmux-navigation')
 if not status then
   return
 end
