@@ -4,11 +4,13 @@ if not status then
 end
 
 local code_actions = null_ls.builtins.code_actions
+local diagnostics = null_ls.builtins.diagnostics
 local formatting = null_ls.builtins.formatting
 
 null_ls.setup({
   sources = {
     code_actions.gitsigns,
+    diagnostics.eslint_d,
     formatting.prettierd,
     formatting.rustfmt,
     formatting.stylua.with({ extra_args = { "--indent_type", "Spaces" } }),
