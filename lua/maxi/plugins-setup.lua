@@ -93,6 +93,9 @@ return packer.startup(function(use)
   -- tree-sitter <3
   use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 
+  -- context
+  use('nvim-treesitter/nvim-treesitter-context')
+
   -- tmux
   use("alexghergh/nvim-tmux-navigation")
 
