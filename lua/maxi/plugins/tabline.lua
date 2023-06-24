@@ -10,5 +10,6 @@ tabline.setup({
   fnamemodify = ':t',
   modify_indicator = '*',
   no_name = 'No name',
+  brackets = { '', '' },
   inactive_tab_max_length = 0
 })
