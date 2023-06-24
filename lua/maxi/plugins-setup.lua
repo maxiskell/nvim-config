@@ -49,7 +49,6 @@ return packer.startup(function(use)
 
   -- file explorer
   use("nvim-tree/nvim-tree.lua")
-  use("nvim-tree/nvim-web-devicons")
 
   -- fuzzy finder
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
