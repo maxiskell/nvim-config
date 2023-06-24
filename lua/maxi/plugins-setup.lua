@@ -34,6 +34,9 @@ return packer.startup(function(use)
   -- maximizes and restores current window
   use("szw/vim-maximizer")
 
+  -- tabline
+  use("crispgm/nvim-tabline")
+
   -- the essentials
   use("tpope/vim-surround")
   use("vim-scripts/ReplaceWithRegister")

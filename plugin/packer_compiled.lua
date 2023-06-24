@@ -174,6 +174,11 @@ _G.packer_plugins = {
     path = "/Users/maxi/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tabline"] = {
+    loaded = true,
+    path = "/Users/maxi/.local/share/nvim/site/pack/packer/start/nvim-tabline",
+    url = "https://github.com/crispgm/nvim-tabline"
+  },
   ["nvim-tmux-navigation"] = {
     loaded = true,
     path = "/Users/maxi/.local/share/nvim/site/pack/packer/start/nvim-tmux-navigation",
