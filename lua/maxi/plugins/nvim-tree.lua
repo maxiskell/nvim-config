@@ -15,6 +15,18 @@ nvimtree.setup({
       },
     },
   },
+  renderer = {
+    icons = {
+      show = {
+        file = false,
+      },
+      glyphs = {
+        git = {
+          untracked = "✹",
+        },
+      },
+    }
+  }
 })
 
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>")
