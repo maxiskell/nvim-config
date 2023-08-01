@@ -1,10 +1,4 @@
-local status, cosmic_ui = pcall(require, "cosmic-ui")
-if not status then
-  return
-end
-
-cosmic_ui.setup({
-  -- default border to use
+require('cosmic-ui').setup({
   -- 'single', 'double', 'rounded', 'solid', 'shadow'
   border_style = 'rounded',
   rename = {
@@ -28,7 +22,7 @@ cosmic_ui.setup({
       title_align = 'center',
       title_hl = 'FloatBorder',
     },
-  }
+  },
 })
 
 local function map(mode, lhs, rhs, opts)
@@ -39,6 +33,6 @@ local function map(mode, lhs, rhs, opts)
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
-map("n", "<leader>rn", "<cmd>lua require('cosmic-ui').rename()<cr>")
-map("n", "<leader>ca", "<cmd>lua require('cosmic-ui').code_actions()<cr>")
-map("v", "<leader>ca", "<cmd>lua require('cosmic-ui').range_code_actions()<cr>")
+map('n', '<leader>rn', "<cmd>lua require('cosmic-ui').rename()<cr>")
+map('n', '<leader>ca', "<cmd>lua require('cosmic-ui').code_actions()<cr>")
+map('v', '<leader>ca', "<cmd>lua require('cosmic-ui').range_code_actions()<cr>")
